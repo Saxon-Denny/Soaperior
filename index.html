@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Header Nav</title>
+        <meta name="description" content="Responsive Header Nav">
+        <meta name="author" content="Treehouse">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="./javascript/index.js"></script>
+    </head>
+
+    <body onload="javascript:homeLoad()">
+        <header>
+            <div class="title">
+                <h1>Soaperior</h1>
+                <h2>Handmade Soaps from the heart of Bristol</h2>
+            </div>
+            <a href="#" id="logo"></a>
+            <nav>
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a id="home-nav" onclick="javascript:showHome()"href="#">Home</a></li>
+                    <li><a id="about-nav" onclick="javascript:showAbout()" href="#">About</a></li>
+                    <li><a id="shop-nav" onclick="javascript:showShop()" href="#">Shop</a></li>
+                    <li><a id="contact-nav" onclick="javascript:showContact()" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="container">
+                <div id="about" class="about"></div>
+                <div id="shop" class="shop"></div>
+                <div id="contact" class="contact"></div>    
+                <div class="icon-bar">
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="etsy"><i class="fa fa-etsy"></i></a>
+                </div>
+            </article>
+        </main>
+  
+    </body>
+</html>
