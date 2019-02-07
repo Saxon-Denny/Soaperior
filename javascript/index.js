@@ -74,3 +74,16 @@ function homeLoad() {
     homeNav = document.getElementById('home-nav');
     homeNav.style.border = "3px solid #555555";
 }
+
+var clicks = 0;
+function linkClick() {
+  
+    menuIcon = document.getElementById('menu-icon');
+    nav = document.getElementById('nav');
+    menuIcon.value = ++clicks;
+   
+    if(clicks % 2 !== 0){
+        nav.style.display = "inline-block";
+    }else{ nav.style.display = "none"}
+}
+
